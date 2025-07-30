@@ -20,7 +20,6 @@ document.addEventListener("DOMContentLoaded", () => {
   let totalPages = 1;
 
   // Toggle navigation sidebar
-  console.log(navDropdown)
   navOpen.addEventListener("click", () => {
     overlay.classList.add("cover");
     navDropdown.classList.add("open");
@@ -91,7 +90,6 @@ document.addEventListener("DOMContentLoaded", () => {
   createDots();
 
   // Email validation and submission
-  console.log(emailForm, emailInput, errorMessage);
   emailForm.addEventListener("submit", (e) => {
     e.preventDefault();
     const emailValue = emailInput.value.trim();
@@ -109,7 +107,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   })
 });
-
 
 
 

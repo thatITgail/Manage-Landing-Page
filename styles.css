@@ -27,20 +27,16 @@ li{
 }
 button{
   display: inline-block;
-  padding: .5rem 1.5rem;
+  padding: .75rem 1.5rem;
   color: var(--Very-Light-Gray);
   font-family: inherit;
-  font-weight: 600;
+  font-size: .85rem;
   background: var(--Bright-Red);
   box-shadow: 6px 6px 10px 6px var(--Very-Pale-Red);
-  border-radius: 1rem;
-  border:1px solid var(--Bright-Red);
+  border-radius: 1.5rem;
+  border: none;
+  /* border:1px solid var(--Bright-Red); */
   cursor: pointer;
-}
-button:hover{
-  color: var(--Dark-Grayish-Blue);
-  opacity: .7;
-
 }
 .showcase-button,
 .reviews-button,
@@ -289,6 +285,10 @@ footer{
 .footer-container{
   padding: 2rem;
 }
+.manage-footer-form{
+  display: flex;
+  gap: 0 1rem;
+}
 .manage-footer-form input{
   width: 75%;
   height: 2.5rem;
@@ -299,6 +299,13 @@ footer{
   font-size: .85rem;
   color: var(--Dark-Grayish-Blue);
   outline: none;
+}
+.go-button{
+  height: 2.5rem;
+  box-shadow: none;
+  /* margin-left: .5rem; */
+  border-radius: 2rem;
+  color: var(--Very-Light-Gray);
 }
 .errorMsg{
   margin-left: 2rem;
@@ -311,13 +318,6 @@ footer{
 }
 .large-para{
   display: none;
-}
-.go-button{
-  height: 2.5rem;
-  box-shadow: none;
-  margin-left: .5rem;
-  border-radius: 2rem;
-  color: var(--Very-Light-Gray);
 }
 .manage-footer-links{
   margin: 2.5rem;
@@ -384,7 +384,6 @@ footer{
     justify-content: space-between;
     gap: 0 8rem;
     padding: 1rem 2rem;
-    /* border: 1px solid red; */
   }
   .menu-open{
     display: none;
@@ -397,16 +396,16 @@ footer{
     width: 8rem;
   }
   .nav-sidebar{
-    top: 0;
-    width: 70%;
-    left: 30%;
+    top: 1.6rem;
+    width: 40%;
+    left: 32%;
     margin-block: 0;
     padding-block: .5rem;
     background: none;
     border-radius: 0;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     /* border: 1px solid red; */
   }
   .navlist{
@@ -526,6 +525,12 @@ footer{
   }
   .form-container{
     width: 35%;
+  }
+  .manage-footer-form{
+    margin-inline: 0;
+  }
+  .manage-footer-form input{
+    width: 75%;
   }
   .large-para{
     display: block;
