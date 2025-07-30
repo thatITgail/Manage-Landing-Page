@@ -288,9 +288,12 @@ footer{
 .manage-footer-form{
   display: flex;
   gap: 0 1rem;
+  border: 1px solid red;
+  margin-inline: 0;
 }
 .manage-footer-form input{
-  width: 75%;
+  flex: 1;
+  max-width: 75%;
   height: 2.5rem;
   border: 1px solid var(--Very-Light-Gray);
   border-radius: 1.5rem;
