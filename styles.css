@@ -288,16 +288,14 @@ footer{
 .manage-footer-form{
   display: flex;
   gap: 0 1rem;
-  border: 1px solid red;
   margin-inline: 0;
+  /* border: 1px solid red; */
 }
 .manage-footer-form input{
-  flex: 1;
-  max-width: 75%;
+  padding: 0 2rem 0 1rem;
   height: 2.5rem;
   border: 1px solid var(--Very-Light-Gray);
   border-radius: 1.5rem;
-  text-indent: 1rem;
   font-family: inherit;
   font-size: .85rem;
   color: var(--Dark-Grayish-Blue);
@@ -529,11 +527,8 @@ footer{
   .form-container{
     width: 35%;
   }
-  .manage-footer-form{
-    margin-inline: 0;
-  }
   .manage-footer-form input{
-    width: 75%;
+    padding-right: 7rem;
   }
   .large-para{
     display: block;
